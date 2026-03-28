@@ -1,6 +1,4 @@
-﻿using System;
-
-void CheckForQuit(string? input) {
+﻿void CheckForQuit(string? input) {
     if (input?.ToLower() == "конец") {
         Environment.Exit(0);
     }
