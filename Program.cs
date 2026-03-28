@@ -24,5 +24,5 @@ while (true) {
 
     ICar car = CarFactory.CreateCar(type);
     Console.Write($"Программа: «{car.GetDescription()}»\n");
-    Console.Write("Введите марку автомобиля или конец для остановки ввода:");
+    Console.Write("Введите марку автомобиля или конец для остановки ввода: ");
 }
