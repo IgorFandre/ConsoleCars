@@ -17,12 +17,12 @@ while (true) {
 
     CarType type;
     if (!Enum.TryParse(input, true, out type)) {
-        Console.Write("Программа: «описание авто»\n");
+        Console.WriteLine("Программа: «описание авто»");
         Console.Write("Введите марку автомобиля или конец для остановки ввода: ");
         continue;
     }
 
     ICar car = CarFactory.CreateCar(type);
-    Console.Write($"Программа: «{car.GetDescription()}»\n");
+    Console.WriteLine($"Программа: «{car.GetDescription()}»");
     Console.Write("Введите марку автомобиля или конец для остановки ввода: ");
 }
